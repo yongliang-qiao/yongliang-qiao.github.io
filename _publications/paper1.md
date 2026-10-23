@@ -1,7 +1,8 @@
 ---
 title: "Cattle body detection based on YOLOv5-ASFF for precision livestock farming"
 collection: publications
-permalink: /files/paper1.pdf
+legacy_duplicate: true
+permalink: /publication-records/paper1/
 excerpt: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
 date: 2023/1/1
 venue: 'This paper is about the number 1. The number 2 is left for future work.'

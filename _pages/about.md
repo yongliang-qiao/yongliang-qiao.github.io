@@ -11,7 +11,7 @@ redirect_from:
 <span id="Biography" class="section-subheading">Biography</span>
 <!-- ====== -->
 
-Yongliang Qiao (Member, IEEE) is an Research fellow in Australian Institute for Machine Learning (AIML), The University of Adelaide. Before this,  he was a Research Associate with the Australian Centre for Field Robotics (ACFR), University of Sydney. He receieved Ph.D. degree in computer science from the University of Burgundy-Franche-Comté in France. His research interests include artificial intelligence, agricultural robots, smart farming, and intelligent perception. Focusing on "Agricultural Intelligence and Agricultural Robots", as the Session Chairman, he has hosted IEEE IROS, IEEE CASE, IFAC AGRICONTROL and other international conferences.
+Yongliang Qiao (Senior Member, IEEE) is a Professor and Ph.D. Supervisor at the [College of Biological and Agricultural Engineering, Jilin University](https://cbae.jlu.edu.cn/info/1130/8619.htm), China. He previously worked at the Australian Institute for Machine Learning (AIML), The University of Adelaide, and the Australian Centre for Field Robotics (ACFR), The University of Sydney. He received his Ph.D. degree from the University of Burgundy-Franche-Comté, France, in 2017. His research focuses on agricultural robotics, autonomous field operations, intelligent perception and multimodal fusion, and AI-based decision-making and control for smart agricultural machinery. He chairs the IEEE RAS Technical Committee on Agricultural Robotics and Automation and serves as an Associate Editor for *Computers and Electronics in Agriculture* and *Frontiers in Plant Science*.
 
 {% include education.html %}
 
@@ -20,8 +20,14 @@ Yongliang Qiao (Member, IEEE) is an Research fellow in Australian Institute for 
 
 <span id="Publications" class="section-subheading">Publications</span>
   <ul>
-  {% for post in site.publications reversed %}
+  {% assign recent_publications = site.publications | where: "recent", true | sort: "date" | reverse %}
+  {% for post in recent_publications %}
     {% include archive-single-cv.html %}
+  {% endfor %}
+  {% for post in site.publications reversed %}
+    {% unless post.recent or post.legacy_duplicate %}
+      {% include archive-single-cv.html %}
+    {% endunless %}
   {% endfor %}
   </ul>
 

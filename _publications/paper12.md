@@ -1,7 +1,8 @@
 ---
 title: "Intelligent perception for cattle monitoring_ A review for cattle identification, body condition score evaluation, and weight estimation"
 collection: publications
-permalink: /files/paper12.pdf
+legacy_duplicate: true
+permalink: /publication-records/paper12/
 excerpt: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(12).'
 date: 2021/4/30
 venue: 'This paper is about the number 1. The number 13 is left for future work.'

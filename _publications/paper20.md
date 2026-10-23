@@ -1,7 +1,8 @@
 ---
 title: "ConvNet and LSH-Based Visual Localization Using Localized Sequence Matching"
 collection: publications
-permalink: /files/paper20.pdf
+legacy_duplicate: true
+permalink: /publication-records/paper20/
 excerpt: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(20).'
 date: 2019/5/21
 venue: 'This paper is about the number 1. The number 21 is left for future work.'

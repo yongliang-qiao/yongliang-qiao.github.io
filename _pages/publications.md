@@ -11,8 +11,14 @@ author_profile: true
 
 <!-- {% include base_path %} -->
 
-{% for post in site.publications reversed %}
+{% assign recent_publications = site.publications | where: "recent", true | sort: "date" | reverse %}
+{% for post in recent_publications %}
   {% include archive-single.html %}
+{% endfor %}
+{% for post in site.publications reversed %}
+  {% unless post.recent or post.legacy_duplicate %}
+    {% include archive-single.html %}
+  {% endunless %}
 {% endfor %}
 
 <!-- 该页面没有用到 -->

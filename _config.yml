@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Yongliang Qiao / Personal Page"
 title_separator          : "-"
 name                     : &name "Yongliang Qiao"
-description              : &description "personal description"
+description              : &description "Yongliang Qiao, Professor at Jilin University. Agricultural robotics, autonomous field operations, multimodal perception and artificial intelligence."
 url                      : https://yongliang-qiao.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "yongliang-qiao/yongliang-qiao.github.io"
@@ -73,7 +73,7 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               :  false # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :
 
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Yongliang Qiao"
   avatar           : "profile.png"
-  # bio              : "" #"Your biography for the left-hand sidebar"
-  # location         : "Location"
-  # employer         :
+  bio              : "Professor, Jilin University"
+  location         : "Changchun, China"
+  employer         : "Jilin University"
   # pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
+  googlescholar    : "https://scholar.google.com/citations?user=xlV8QE0AAAAJ&hl=en"
+  email            : "ylqiao@jlu.edu.cn"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
